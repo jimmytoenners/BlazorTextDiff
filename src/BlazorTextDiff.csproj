@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
-
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
     <AssemblyName>BlazorTextDiff</AssemblyName>
     <RootNamespace>BlazorTextDiff</RootNamespace>
@@ -12,29 +11,22 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageTags>Diff, TextDiff, Blazor</PackageTags>
   </PropertyGroup>
-
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
     <Content Remove="wwwroot\BlazorDiff.scss" />
   </ItemGroup>
-
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\css\BlazorDiff.css" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="wwwroot\css\BlazorDiff.scss" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="compilerconfig.json" />
   </ItemGroup>
-
-
   <ItemGroup>
     <PackageReference Include="DiffPlex" Version="1.5.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.2" />
   </ItemGroup>
-
 </Project>
